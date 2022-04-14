@@ -1,4 +1,9 @@
-//Reset
-@use "./reset";
 //Bootstrap
 @use "./bootstrap";
+//Reset
+@use "./reset";
+
+//Utility classes
+@import "./utilities/utility-classes";
+
+@import "./ui-kit/ui-kit";
