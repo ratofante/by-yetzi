@@ -11249,6 +11249,32 @@ i {
   font-weight: 900;
 }
 
+.logo-button {
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+  padding: 3rem;
+  border: 1px solid black;
+}
+.logo-button-img {
+  width: 100%;
+  padding: 2rem;
+}
+.logo-button-img img {
+  width: 100%;
+}
+.logo-button-title {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.logo-button-btn {
+  margin: auto;
+}
+.logo-button-btn button {
+  padding-inline: 2rem;
+}
+
 .bg-white {
   background-color: rgb(255, 255, 255);
 }
