@@ -1,13 +1,16 @@
 @import "../variables";
 
 @mixin small {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 620px) {
     @content;
   }
 }
 
 .ui-kit-body {
   background-color: $white;
+  & .ui-div {
+    padding: 3rem;
+  }
   & h2 {
     padding: 3rem 0px 0px 3rem;
   }
@@ -16,7 +19,6 @@
 .sist-color {
   display: flex;
   flex-flow: row;
-  padding: 3rem;
   @include small {
     flex-direction: column;
   }
@@ -44,5 +46,16 @@
         margin-top: 1rem;
       }
     }
+  }
+}
+//Sist. Iconos
+.buttons-div {
+  display: flex;
+  flex-direction: row;
+  @include small {
+    flex-direction: column;
+  }
+  & button {
+    margin-block: 1rem;
   }
 }
