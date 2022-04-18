@@ -41,12 +41,17 @@ i {
 }
 
 //Icon & Button
+.logo-btns {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  margin: auto;
+}
 .logo-button {
   display: flex;
   flex-direction: column;
   max-width: 390px;
   padding: 3rem;
-  border: 1px solid black;
   &-img {
     width: 100%;
     padding: 2rem;
