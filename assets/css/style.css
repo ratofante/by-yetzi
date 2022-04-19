@@ -11485,6 +11485,14 @@ html {
 .main {
   margin-block: 1.5rem;
 }
+@media screen and (min-width: 650px) {
+  .main__block:nth-child(1) {
+    flex-direction: row-reverse;
+  }
+  .main__block:nth-child(2) {
+    flex-direction: row;
+  }
+}
 .main__block {
   margin-inline: 1.5rem;
   margin-block: 2rem;
@@ -11497,8 +11505,50 @@ html {
 .main__block__text strong {
   font-weight: 700;
 }
-.main__block__text h3 {
+.main__block__title {
+  padding: 2rem;
+}
+@media screen and (min-width: 650px) {
+  .main__block__title {
+    padding-inline: min(10vw, 6rem);
+    padding-block: 100px;
+  }
+}
+.main__block__title h3 {
   text-align: center;
+}
+.main__block__img {
+  display: none;
+}
+@media screen and (min-width: 650px) {
+  .main__block {
+    display: flex;
+    align-items: center;
+  }
+  .main__block__text {
+    width: 50%;
+  }
+  .main__block__img {
+    position: relative;
+    display: block;
+    width: 50%;
+  }
+  .main__block__img img {
+    width: 80%;
+    max-width: 265px;
+    margin: auto;
+    opacity: 0.4;
+  }
+  .main__block__img__title {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+  }
+  .main__block__img__title p {
+    font-weight: 900;
+    font-size: 2rem;
+  }
 }
 
 aside.servicios {
@@ -11531,6 +11581,11 @@ aside.servicios div.servicio__text p {
 }
 aside.servicios div.servicio__text p strong {
   font-weight: 900;
+}
+@media screen and (min-width: 650px) {
+  aside.servicios {
+    display: none;
+  }
 }
 
 html {

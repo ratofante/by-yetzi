@@ -2,6 +2,14 @@ $block-spacing: 2rem;
 
 .main {
   margin-block: $viewport-margin;
+  @include large {
+    &__block:nth-child(1) {
+      flex-direction: row-reverse;
+    }
+    &__block:nth-child(2) {
+      flex-direction: row;
+    }
+  }
   &__block {
     margin-inline: $viewport-margin;
     margin-block: $block-spacing;
@@ -12,8 +20,46 @@ $block-spacing: 2rem;
       & strong {
         font-weight: $font-bold;
       }
+    }
+    &__title {
+      @include large {
+        padding-inline: min(10vw, 6rem);
+        padding-block: 100px;
+      }
+      padding: 2rem;
       & h3 {
         text-align: center;
+      }
+    }
+    &__img {
+      display: none;
+    }
+    @include large {
+      display: flex;
+      align-items: center;
+      &__text {
+        width: 50%;
+      }
+      &__img {
+        position: relative;
+        display: block;
+        width: 50%;
+        & img {
+          width: 80%;
+          max-width: 265px;
+          margin: auto;
+          opacity: 0.4;
+        }
+        &__title {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          text-align: center;
+          & p {
+            font-weight: $font-bolder;
+            font-size: 2rem;
+          }
+        }
       }
     }
   }
@@ -48,5 +94,8 @@ aside.servicios {
         }
       }
     }
+  }
+  @include large {
+    display: none;
   }
 }
