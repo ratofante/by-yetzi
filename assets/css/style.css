@@ -11206,7 +11206,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .sr-only {
@@ -11373,23 +11373,18 @@ html {
     display: none;
   }
 }
-.header-navbar-btn button[aria-expanded=false] {
-  background-image: url("../img/menu-icon.svg");
-}
-.header-navbar-btn button[aria-expanded=true] {
-  background-image: url("../img/menu-close.svg");
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-}
 .header-navbar-btn button {
-  width: 40px;
-  height: 40px;
+  position: fixed;
+  top: 22px;
+  width: 30px;
+  height: 30px;
   border: none;
+  border-radius: 50%;
   font-size: 2rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.336);
 }
 .header-navbar-btn button img {
   width: 100%;
@@ -11399,12 +11394,21 @@ html {
     display: none;
   }
 }
+.header-navbar-btn button[aria-expanded=false] {
+  background-image: url("../img/menu-icon.svg");
+}
+.header-navbar-btn button[aria-expanded=true] {
+  background-image: url("../img/menu-close.svg");
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
 .header-navbar nav {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   top: 0px;
   left: 0px;
   width: 100vw;
@@ -11472,9 +11476,61 @@ html {
 
 .banner {
   max-height: 400px;
+  overflow: hidden;
 }
 .banner img {
   width: 100%;
+}
+
+.main {
+  margin-block: 1.5rem;
+}
+.main__block {
+  margin-inline: 1.5rem;
+  margin-block: 2rem;
+}
+.main__block__text {
+  padding: clamp(1.25rem, 7vw, 5rem);
+  text-align: center;
+  line-height: 2.5rem;
+}
+.main__block__text strong {
+  font-weight: 700;
+}
+.main__block__text h3 {
+  text-align: center;
+}
+
+aside.servicios {
+  margin: max(4vh, 2rem) 1.5rem;
+}
+aside.servicios div.servicio {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: clamp(95px, 20vh, 150px);
+  margin-block: 2rem;
+}
+aside.servicios div.servicio__img {
+  position: absolute;
+  width: 100%;
+}
+aside.servicios div.servicio__img img {
+  margin: auto;
+  width: 100px;
+  opacity: 0.4;
+}
+aside.servicios div.servicio__text {
+  position: absolute;
+  align-self: center;
+  width: 100%;
+  text-align: center;
+}
+aside.servicios div.servicio__text p {
+  font-size: 1.2rem;
+}
+aside.servicios div.servicio__text p strong {
+  font-weight: 900;
 }
 
 html {

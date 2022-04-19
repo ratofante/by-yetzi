@@ -1,0 +1,52 @@
+$block-spacing: 2rem;
+
+.main {
+  margin-block: $viewport-margin;
+  &__block {
+    margin-inline: $viewport-margin;
+    margin-block: $block-spacing;
+    &__text {
+      padding: clamp(1.25rem, 7vw, 5rem);
+      text-align: center;
+      line-height: 2.5rem;
+      & strong {
+        font-weight: $font-bold;
+      }
+      & h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+aside.servicios {
+  margin: max(4vh, 2rem) $viewport-margin;
+  & div.servicio {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: clamp(95px, 20vh, 150px);
+    margin-block: 2rem;
+    &__img {
+      position: absolute;
+      width: 100%;
+      & img {
+        margin: auto;
+        width: 100px;
+        opacity: 0.4;
+      }
+    }
+    &__text {
+      position: absolute;
+      align-self: center;
+      width: 100%;
+      text-align: center;
+      & p {
+        font-size: 1.2rem;
+        & strong {
+          font-weight: $font-bolder;
+        }
+      }
+    }
+  }
+}
