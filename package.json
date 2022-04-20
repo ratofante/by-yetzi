@@ -11,10 +11,10 @@
     "Landing",
     "Page"
   ],
-  "author": "Rodrigo González Wilkens",
+  "author": "Rodrigo González Wilkens -- Dabrowski Yanina ",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.50.0"
+    "sass": "^1.50.1"
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",

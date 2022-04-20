@@ -11697,4 +11697,23 @@ html {
   margin-block: 1rem;
 }
 
+
+.footer__ {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+
+.footer__img {
+  width:40%;
+  height:40%;
+}
+.footer__text {
+  text-align: center;
+}
+
+.footer__link__text {
+  margin-left: 20px;
+}
 /*# sourceMappingURL=style.css.map */
