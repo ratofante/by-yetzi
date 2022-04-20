@@ -10,6 +10,16 @@ $block-spacing: 2rem;
       flex-direction: row;
     }
   }
+  @include wide {
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr 1fr;
+    grid-template-areas:
+      "aside1 block1 block1 block1"
+      "aside1 block2 block2 block2"
+      "aside2 block3 block3 block3"
+      "aside2 block4 block4 block4"
+      "aside2 block5 block5 block5";
+  }
   &__block {
     margin-inline: $viewport-margin;
     margin-block: $block-spacing;
@@ -62,6 +72,35 @@ $block-spacing: 2rem;
         }
       }
     }
+    @include large {
+      &__text {
+        width: 100%;
+      }
+      &__img {
+        display: none;
+      }
+    }
+  }
+  .block-1 {
+    grid-area: block1;
+  }
+  .block-2 {
+    grid-area: block2;
+  }
+  .block-3 {
+    grid-area: block3;
+  }
+  .block-4 {
+    grid-area: block4;
+  }
+  .block-5 {
+    grid-area: block5;
+  }
+  .aside-1 {
+    grid-area: aside1;
+  }
+  .aside-2 {
+    grid-area: aside2;
   }
 }
 
@@ -97,5 +136,8 @@ aside.servicios {
   }
   @include large {
     display: none;
+  }
+  @include wide {
+    display: block;
   }
 }

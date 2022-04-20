@@ -1,6 +1,9 @@
 .banner {
   max-height: 400px;
   overflow: hidden;
+  @include wide {
+    max-height: 600px;
+  }
   & img {
     width: 100%;
   }

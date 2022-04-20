@@ -11478,6 +11478,11 @@ html {
   max-height: 400px;
   overflow: hidden;
 }
+@media screen and (min-width: 898px) {
+  .banner {
+    max-height: 600px;
+  }
+}
 .banner img {
   width: 100%;
 }
@@ -11491,6 +11496,13 @@ html {
   }
   .main__block:nth-child(2) {
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 898px) {
+  .main {
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr 1fr;
+    grid-template-areas: "aside1 block1 block1 block1" "aside1 block2 block2 block2" "aside2 block3 block3 block3" "aside2 block4 block4 block4" "aside2 block5 block5 block5";
   }
 }
 .main__block {
@@ -11550,6 +11562,35 @@ html {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 650px) {
+  .main__block__text {
+    width: 100%;
+  }
+  .main__block__img {
+    display: none;
+  }
+}
+.main .block-1 {
+  grid-area: block1;
+}
+.main .block-2 {
+  grid-area: block2;
+}
+.main .block-3 {
+  grid-area: block3;
+}
+.main .block-4 {
+  grid-area: block4;
+}
+.main .block-5 {
+  grid-area: block5;
+}
+.main .aside-1 {
+  grid-area: aside1;
+}
+.main .aside-2 {
+  grid-area: aside2;
+}
 
 aside.servicios {
   margin: max(4vh, 2rem) 1.5rem;
@@ -11585,6 +11626,11 @@ aside.servicios div.servicio__text p strong {
 @media screen and (min-width: 650px) {
   aside.servicios {
     display: none;
+  }
+}
+@media screen and (min-width: 898px) {
+  aside.servicios {
+    display: block;
   }
 }
 
