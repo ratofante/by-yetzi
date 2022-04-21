@@ -11634,6 +11634,27 @@ aside.servicios div.servicio__text p strong {
   }
 }
 
+.footer__ {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.footer__img {
+  width: 100px;
+  height: 100px;
+}
+
+.footer__text {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.footer__link__text {
+  text-align: center;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
 }
@@ -11696,28 +11717,5 @@ html {
 .buttons-div button {
   margin-block: 1rem;
 }
-
-
-.footer__ {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-around;
-}
-.footer__img {
-  width: 50px;
-  height: 50px;
-  margin-left: 50px;
- 
-}
-.footer__text {
-  
-  text-align: center;
-
-} 
-.footer__link__text{
-  margin-left: 40px;
-}
-
 
 /*# sourceMappingURL=style.css.map */
