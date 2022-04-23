@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11634,24 +11635,46 @@ aside.servicios div.servicio__text p strong {
   }
 }
 
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
 .footer__ {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(26, 23, 27);
+}
+
+a:visited {
+  color: rgb(26, 23, 27);
 }
 
 .footer__img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px rgb(26, 23, 27);
+  align-items: center;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
-.footer__text {
-  margin-left: 20px;
-  text-align: center;
+.footer__img:hover {
+  box-shadow: 3px 3px 1px rgb(226, 0, 122);
 }
 
 .footer__link__text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer__text {
   text-align: center;
 }
 
