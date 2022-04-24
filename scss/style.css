@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11668,7 +11669,7 @@ html {
   .main {
     display: grid;
     grid-template-columns: 400px 1fr 1fr 1fr;
-    grid-template-areas: "aside1 block1 block1 block1" "aside1 block2 block2 block2" "aside2 block3 block3 block3" "aside2 block4 block4 block4" "aside2 block5 block5 block5";
+    grid-template-areas: "aside1 block1 block1 block1" "aside1 block2 block2 block2" "aside2 block3 block3 block3" "aside2 block4 block4 block4" "block5 block5 block5 block5";
   }
 }
 .main__block {
@@ -11683,6 +11684,11 @@ html {
 .main__block__text strong {
   font-weight: 700;
 }
+@media screen and (min-width: 650px) {
+  .main__block__text {
+    padding-inline: 15rem;
+  }
+}
 .main__block__title {
   padding: 2rem;
 }
@@ -11690,6 +11696,14 @@ html {
   .main__block__title {
     padding-inline: min(10vw, 6rem);
     padding-block: 100px;
+  }
+}
+@media screen and (min-width: 898px) {
+  .main__block__title {
+    margin: auto;
+  }
+  .main__block__title h3 {
+    font-size: 4rem;
   }
 }
 .main__block__title h3 {
@@ -11789,6 +11803,15 @@ aside.servicios div.servicio__text p {
 aside.servicios div.servicio__text p strong {
   font-weight: 900;
 }
+@media screen and (min-width: 898px) {
+  aside.servicios div.servicio .servicio__img {
+    position: static;
+    align-self: center;
+  }
+  aside.servicios div.servicio .servicio__text {
+    position: static;
+  }
+}
 @media screen and (min-width: 650px) {
   aside.servicios {
     display: none;
@@ -11798,6 +11821,60 @@ aside.servicios div.servicio__text p strong {
   aside.servicios {
     display: block;
   }
+}
+
+@media screen and (min-width: 650px) {
+  .aside-2 .imagen-separador {
+    max-height: 400px;
+    overflow-y: hidden;
+  }
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer__ {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  background-color: rgb(26, 23, 27);
+  padding: 30px;
+  padding-left: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.footer__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px rgb(26, 23, 27);
+  align-items: center;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.footer__img:hover {
+  box-shadow: 3px 3px 1px rgb(226, 0, 122);
+}
+
+.footer__link__text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer__text {
+  text-align: center;
 }
 
 html {

@@ -6,16 +6,19 @@
     flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
+    background-color: $black ;
+    padding: 30px;
+    padding-left: 50px;
     
   }
   a { 
     text-decoration: none;
-    color: $black;
+    color: $white;
     
 }
 
-  a:visited {
-  color: $black;
+  a:hover {
+  color: $white;
 }
   .footer__img {
     width: 50px;
@@ -25,7 +28,8 @@
     align-items: center;
     margin-bottom: 10px;
     align-items: center;
-    
+    background-color: $white;
+   
     
   }
 
@@ -40,4 +44,5 @@
 
   .footer__text {
     text-align: center;
+    
   }
