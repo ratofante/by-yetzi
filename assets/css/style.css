@@ -11502,7 +11502,7 @@ html {
   .main {
     display: grid;
     grid-template-columns: 400px 1fr 1fr 1fr;
-    grid-template-areas: "aside1 block1 block1 block1" "aside1 block2 block2 block2" "aside2 block3 block3 block3" "aside2 block4 block4 block4" "aside2 block5 block5 block5";
+    grid-template-areas: "aside1 block1 block1 block1" "aside1 block2 block2 block2" "aside2 block3 block3 block3" "aside2 block4 block4 block4" "block5 block5 block5 block5";
   }
 }
 .main__block {
@@ -11511,6 +11511,7 @@ html {
 }
 .main__block__text {
   padding: clamp(1.25rem, 7vw, 5rem);
+  padding-inline: 15rem;
   text-align: center;
   line-height: 2.5rem;
 }
@@ -11524,6 +11525,14 @@ html {
   .main__block__title {
     padding-inline: min(10vw, 6rem);
     padding-block: 100px;
+  }
+}
+@media screen and (min-width: 898px) {
+  .main__block__title {
+    margin: auto;
+  }
+  .main__block__title h3 {
+    font-size: 4rem;
   }
 }
 .main__block__title h3 {
@@ -11623,6 +11632,14 @@ aside.servicios div.servicio__text p {
 aside.servicios div.servicio__text p strong {
   font-weight: 900;
 }
+@media screen and (min-width: 898px) {
+  aside.servicios div.servicio .servicio__img {
+    position: static;
+  }
+  aside.servicios div.servicio .servicio__text {
+    position: static;
+  }
+}
 @media screen and (min-width: 650px) {
   aside.servicios {
     display: none;
@@ -11631,6 +11648,13 @@ aside.servicios div.servicio__text p strong {
 @media screen and (min-width: 898px) {
   aside.servicios {
     display: block;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .aside-2 .imagen-separador {
+    max-height: 400px;
+    overflow-y: hidden;
   }
 }
 

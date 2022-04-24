@@ -18,13 +18,14 @@ $block-spacing: 2rem;
       "aside1 block2 block2 block2"
       "aside2 block3 block3 block3"
       "aside2 block4 block4 block4"
-      "aside2 block5 block5 block5";
+      "block5 block5 block5 block5";
   }
   &__block {
     margin-inline: $viewport-margin;
     margin-block: $block-spacing;
     &__text {
       padding: clamp(1.25rem, 7vw, 5rem);
+      padding-inline: 15rem;
       text-align: center;
       line-height: 2.5rem;
       & strong {
@@ -35,6 +36,12 @@ $block-spacing: 2rem;
       @include large {
         padding-inline: min(10vw, 6rem);
         padding-block: 100px;
+      }
+      @include wide {
+        margin: auto;
+        & h3 {
+          font-size: 4rem;
+        }
       }
       padding: 2rem;
       & h3 {
@@ -133,11 +140,28 @@ aside.servicios {
         }
       }
     }
+    @include wide {
+      & .servicio__img {
+        position: static;
+      }
+      & .servicio__text {
+        position: static;
+      }
+    }
   }
   @include large {
     display: none;
   }
   @include wide {
     display: block;
+  }
+}
+
+.aside-2 {
+  @include large {
+    & .imagen-separador {
+      max-height: 400px;
+      overflow-y: hidden;
+    }
   }
 }
