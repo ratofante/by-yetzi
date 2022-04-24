@@ -14,13 +14,9 @@
   "author": "Rodrigo González Wilkens -- Dabrowski Yanina ",
   "license": "ISC",
   "devDependencies": {
-<<<<<<< HEAD
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
-    "sass": "^1.50.0"
-=======
     "sass": "^1.50.1"
->>>>>>> 28ea708c9d13ea02a5609dd442871279324e9c3c
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",

@@ -25,11 +25,13 @@ $block-spacing: 2rem;
     margin-block: $block-spacing;
     &__text {
       padding: clamp(1.25rem, 7vw, 5rem);
-      padding-inline: 15rem;
       text-align: center;
       line-height: 2.5rem;
       & strong {
         font-weight: $font-bold;
+      }
+      @include large {
+        padding-inline: 15rem;
       }
     }
     &__title {
