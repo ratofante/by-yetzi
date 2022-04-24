@@ -11512,12 +11512,16 @@ html {
 }
 .main__block__text {
   padding: clamp(1.25rem, 7vw, 5rem);
-  padding-inline: 15rem;
   text-align: center;
   line-height: 2.5rem;
 }
 .main__block__text strong {
   font-weight: 700;
+}
+@media screen and (min-width: 650px) {
+  .main__block__text {
+    padding-inline: 15rem;
+  }
 }
 .main__block__title {
   padding: 2rem;
@@ -11636,6 +11640,7 @@ aside.servicios div.servicio__text p strong {
 @media screen and (min-width: 898px) {
   aside.servicios div.servicio .servicio__img {
     position: static;
+    align-self: center;
   }
   aside.servicios div.servicio .servicio__text {
     position: static;

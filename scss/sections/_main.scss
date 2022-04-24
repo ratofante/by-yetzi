@@ -145,6 +145,7 @@ aside.servicios {
     @include wide {
       & .servicio__img {
         position: static;
+        align-self: center;
       }
       & .servicio__text {
         position: static;
