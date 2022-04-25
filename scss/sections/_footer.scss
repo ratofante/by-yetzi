@@ -3,6 +3,7 @@
 
 .footer__ {
     display: flex;
+    color: $white;
     flex-direction: row;
     list-style: none;
      justify-content: space-around;
@@ -11,14 +12,12 @@
      padding-left: 50px;
     
   }
-  a { 
-    text-decoration: none;
-    color: transparent;
-    
-}
+  
+
+
 
   a:hover {
-  color: $white;
+  color: $black;
 }
   .footer__img {
     //  width: 50px;

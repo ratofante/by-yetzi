@@ -12409,6 +12409,7 @@ html {
 
 .footer__ {
   display: flex;
+  color: rgb(255, 255, 255);
   flex-direction: row;
   list-style: none;
   justify-content: space-around;
@@ -12417,13 +12418,8 @@ html {
   padding-left: 50px;
 }
 
-a {
-  text-decoration: none;
-  color: transparent;
-}
-
 a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(26, 23, 27);
 }
 
 .footer__img {
