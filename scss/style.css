@@ -11508,7 +11508,7 @@ html {
 .header-slogan img {
   width: 100%;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
   .header-slogan {
     display: flex;
     align-items: center;
@@ -11854,8 +11854,6 @@ a:hover {
 }
 
 .footer__img {
-  width: 50px;
-  height: 50px;
   border-radius: 10px;
   box-shadow: 3px 3px 1px rgb(26, 23, 27);
   align-items: center;
