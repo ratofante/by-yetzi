@@ -1,0 +1,73 @@
+section.servicios {
+  margin-block: 2rem;
+  margin-inline: $viewport-margin;
+  & h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-block: 5rem;
+  }
+  & h3.servicios__bajada {
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* CARROUSEL SERVICIOS */
+#carouselExampleIndicators {
+  @include large {
+    display: none;
+  }
+}
+.carousel-control-next-icon {
+  background-image: url("../../assets/img/arrow-right.svg");
+}
+.carousel-control-prev-icon {
+  background-image: url("../../assets/img/arrow-left.svg");
+}
+.servicios-carrusel {
+  & div {
+    width: 100%;
+    padding: clamp(1rem, 10vh, 4rem) clamp(4rem, 17vw, 12rem);
+    @include large {
+      padding: 0px;
+    }
+  }
+  & h4 {
+    font-size: 2rem;
+    text-align: center;
+    @include large {
+      height: 50px;
+    }
+  }
+  & button {
+    display: block;
+    margin: 2rem auto 1rem auto;
+    padding: 0.5rem 1rem;
+    font-weight: $font-bold;
+    color: $black;
+    border: 1px solid black;
+    font-size: 1.4rem;
+  }
+}
+
+/* Servicios @Large */
+.display-servicios {
+  display: none;
+  @include large {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    & div.servicios-carrusel {
+      flex: 0 1 34%;
+      margin-bottom: 3rem;
+      & div {
+        width: 88%;
+        margin: auto;
+      }
+      @include wide {
+        flex: 0 1 23%;
+      }
+    }
+  }
+}

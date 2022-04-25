@@ -15,9 +15,9 @@ $block-spacing: 2rem;
     grid-template-columns: 400px 1fr 1fr 1fr;
     grid-template-areas:
       "aside1 block1 block1 block1"
-      "aside1 block2 block2 block2"
-      "aside2 block3 block3 block3"
-      "aside2 block4 block4 block4"
+      "block2 block2 aside2 aside2"
+      "empty block3 block3 block3"
+      "block4 block4 aside4 aside4"
       "block5 block5 block5 block5";
   }
   &__block {
@@ -163,7 +163,7 @@ aside.servicios {
 .aside-2 {
   @include large {
     & .imagen-separador {
-      max-height: 400px;
+      min-height: 520px;
       overflow-y: hidden;
     }
   }

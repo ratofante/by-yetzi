@@ -1,47 +1,37 @@
-@import "../variables";
-
-
 .footer__ {
-    display: flex;
-    color: $white;
-    flex-direction: row;
-    list-style: none;
-     justify-content: space-around;
-     background-color: $black ;
-     padding: 30px;
-     padding-left: 50px;
-    
-  }
-  
+  display: flex;
+  color: $white;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  background-color: $black;
+  padding: 30px;
+  padding-left: 50px;
+}
 
-
-
-  a:hover {
+a:hover {
   color: $black;
 }
-  .footer__img {
-    //  width: 50px;
-    //  height: 50px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 1px $black;
-    align-items: center;
-    margin-bottom: 10px;
-    align-items: center;
-    background-color: $white;
-   
-    
-  }
+.footer__img {
+  //  width: 50px;
+  //  height: 50px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px $black;
+  align-items: center;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: $white;
+}
 
-  .footer__img:hover {
-    box-shadow: 3px 3px 1px $pink;
-  }
-  
-  .footer__link__text{
-    margin-top: 10px;
-    text-align: center;
-  }
+.footer__img:hover {
+  box-shadow: 3px 3px 1px $pink;
+}
 
-  .footer__text {
-    text-align: center;
-    
-  }
+.footer__link__text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer__text {
+  text-align: center;
+}

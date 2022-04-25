@@ -11,10 +11,10 @@
 
 //Sections
 @import "./sections/header";
-@import "./sections/banner";
+@import "./components/banner";
 @import "./sections/main";
 @import "./sections/footer";
+@import "./sections/servicios_main";
+@import "./components/navbar-servicios";
 
 @import "./ui-kit/ui-kit";
-
-
