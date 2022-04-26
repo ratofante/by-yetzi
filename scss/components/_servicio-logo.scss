@@ -1,0 +1,16 @@
+.servicio-logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h5 {
+    display: none;
+  }
+  &-img {
+    position: absolute;
+    width: 190%;
+    top: 262px;
+    margin: auto;
+    opacity: 0.2;
+  }
+}

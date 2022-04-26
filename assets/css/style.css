@@ -11944,6 +11944,44 @@ section.servicios h3.servicios__bajada {
   }
 }
 
+.servicio-main {
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.servicio-info h2 {
+  text-align: center;
+}
+.servicio-info h4 {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 1.6rem;
+  margin-block: 2rem;
+}
+.servicio-info h4 img {
+  margin-right: 2rem;
+}
+.servicio-info-text:last-child {
+  margin-bottom: 3rem;
+}
+
+.servicio-logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicio-logo h5 {
+  display: none;
+}
+.servicio-logo-img {
+  position: absolute;
+  width: 190%;
+  top: 262px;
+  margin: auto;
+  opacity: 0.2;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
 }

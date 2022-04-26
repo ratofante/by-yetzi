@@ -1,0 +1,22 @@
+.servicio-main {
+  padding: $viewport-margin;
+  overflow: hidden;
+}
+
+.servicio-info {
+  & h2 {
+    text-align: center;
+  }
+  & h4 {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 1.6rem;
+    margin-block: 2rem;
+    & img {
+      margin-right: 2rem;
+    }
+  }
+  &-text:last-child {
+    margin-bottom: 3rem;
+  }
+}
