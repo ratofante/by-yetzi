@@ -9,14 +9,17 @@
 //Utility classes
 @import "./utilities/utility-classes";
 
+//Componentes
+@import "./components/banner";
+@import "./components/navbar-servicios";
+@import "./components/servicio-logo";
+@import "./components/separador";
+
 //Sections
 @import "./sections/header";
-@import "./components/banner";
 @import "./sections/main";
 @import "./sections/footer";
 @import "./sections/servicios_main";
-@import "./components/navbar-servicios";
 @import "./sections/servicio";
-@import "./components/servicio-logo";
 
 @import "./ui-kit/ui-kit";
