@@ -11226,6 +11226,10 @@ a {
   color: inherit;
 }
 
+.upper {
+  text-transform: capitalize;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
 }
@@ -11309,7 +11313,7 @@ i {
 }
 
 .bg-white {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .bg-black {
@@ -11948,7 +11952,20 @@ section.servicios h3.servicios__bajada {
   padding: 1.5rem;
   overflow: hidden;
 }
+@media screen and (min-width: 898px) {
+  .servicio-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1060px;
+    margin: 8rem auto;
+  }
+}
 
+.servicio-info {
+  max-width: 575px;
+  margin: auto;
+}
 .servicio-info h2 {
   text-align: center;
 }
@@ -11961,8 +11978,54 @@ section.servicios h3.servicios__bajada {
 .servicio-info h4 img {
   margin-right: 2rem;
 }
+.servicio-info-text {
+  max-width: 580px;
+  margin-bottom: clamp(2rem, 5vw, 8rem);
+}
 .servicio-info-text:last-child {
   margin-bottom: 3rem;
+}
+.servicio-info button {
+  display: block;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0.25rem 2rem;
+  border: 1px solid rgb(26, 23, 27);
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 650px) {
+  .servicio-info button {
+    margin-inline: 0px;
+  }
+}
+.servicio-info-list {
+  display: flex;
+  flex-flow: wrap;
+  padding: 0px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 4rem;
+}
+.servicio-info-list li {
+  list-style-type: none;
+  margin: 0.25rem;
+  border: none;
+  padding: 0.25rem 1rem;
+  flex: 1 1 auto;
+  text-align: center;
+}
+.servicio-info-list li:nth-child(3n) {
+  background-color: rgba(226, 0, 122, 0.5);
+}
+.servicio-info-list li:nth-child(3n+1) {
+  background-color: rgba(255, 234, 0, 0.5);
+}
+.servicio-info-list li:nth-child(3n+2) {
+  background-color: rgba(0, 158, 224, 0.5);
+}
+
+.less-mb {
+  margin-bottom: 2rem;
 }
 
 .servicio-logo {
@@ -11971,8 +12034,21 @@ section.servicios h3.servicios__bajada {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 898px) {
+  .servicio-logo {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+  }
+}
 .servicio-logo h5 {
   display: none;
+}
+@media screen and (min-width: 898px) {
+  .servicio-logo h5 {
+    display: block;
+    font-size: 2.5rem;
+  }
 }
 .servicio-logo-img {
   position: absolute;
@@ -11980,6 +12056,20 @@ section.servicios h3.servicios__bajada {
   top: 262px;
   margin: auto;
   opacity: 0.2;
+  z-index: -1;
+}
+@media screen and (min-width: 500px) {
+  .servicio-logo-img {
+    top: 76px;
+    width: 66%;
+  }
+}
+@media screen and (min-width: 898px) {
+  .servicio-logo-img {
+    position: static;
+    opacity: 1;
+    margin: 0px;
+  }
 }
 
 html {

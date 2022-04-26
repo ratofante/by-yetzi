@@ -3,8 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include wide {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+  }
   & h5 {
     display: none;
+    @include wide {
+      display: block;
+      font-size: 2.5rem;
+    }
   }
   &-img {
     position: absolute;
@@ -12,5 +21,15 @@
     top: 262px;
     margin: auto;
     opacity: 0.2;
+    z-index: -1;
+    @include medium {
+      top: 76px;
+      width: 66%;
+    }
+    @include wide {
+      position: static;
+      opacity: 1;
+      margin: 0px;
+    }
   }
 }
