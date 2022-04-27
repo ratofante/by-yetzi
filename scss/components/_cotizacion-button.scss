@@ -1,0 +1,12 @@
+.button-1 {
+  display: block;
+  font-weight: $font-bolder;
+  font-size: 1.2rem;
+  padding: 0.25rem 2rem;
+  border: 1px solid $black;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+  @include large {
+    margin-inline: 0px;
+  }
+}
