@@ -11576,6 +11576,59 @@ div.separador:before {
   margin: 2rem 0px 2rem 2rem;
 }
 
+.logofolio-large {
+  display: none;
+}
+@media screen and (min-width: 650px) {
+  .logofolio-large {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+#logofolio-carrusel {
+  max-width: 440px;
+  height: 480px;
+  margin: auto;
+}
+@media screen and (min-width: 650px) {
+  #logofolio-carrusel {
+    display: none;
+  }
+}
+
+.logofolio {
+  max-width: 320px;
+  margin: auto;
+}
+@media screen and (min-width: 650px) {
+  .logofolio {
+    width: 30%;
+    margin-block: 2rem;
+  }
+}
+@media screen and (min-width: 898px) {
+  .logofolio {
+    flex: 1 1 320px;
+  }
+}
+.logofolio-img {
+  padding: 1rem;
+}
+.logofolio-img img {
+  width: 100%;
+}
+.logofolio-text {
+  text-align: center;
+}
+@media screen and (min-width: 650px) {
+  .logofolio-text-title {
+    font-size: 2rem;
+    height: 50px;
+  }
+}
+
 html {
   font-family: "Montserrat", sans-serif;
 }
