@@ -1,11 +1,59 @@
 .papeleria {
   margin-inline: $viewport-margin;
-
+  max-width: 1300px;
+  margin-inline: auto;
+  margin-block: clamp(2rem, 15vw, 9rem);
+  @include large {
+    display: flex;
+    flex-direction: row;
+  }
   &-section {
+    @include large {
+      &:first-child {
+        width: 60%;
+      }
+      &:last-child {
+        width: 40%;
+        padding-left: 2rem;
+      }
+    }
     & h2 {
       font-size: 2.3rem;
       text-align: center;
       padding-inline: 2rem;
+    }
+    &-flex {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 3rem auto 2rem auto;
+      @include large {
+        width: 100%;
+      }
+    }
+    &-img {
+      width: 75%;
+      margin: auto;
+      position: relative;
+      @include large {
+      }
+      &:first-child {
+        right: 60px;
+      }
+      &:last-child {
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        z-index: -1;
+        @include large {
+          top: 89px;
+          right: -52px;
+        }
+      }
+      & img {
+        width: 100%;
+      }
     }
   }
 }

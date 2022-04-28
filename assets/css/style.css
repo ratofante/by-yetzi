@@ -11571,6 +11571,11 @@ div.separador:before {
   margin-bottom: 3rem;
 }
 
+/* Papaeleria, necesita un comportamient ode márgenes diferente */
+.button-1-1 {
+  margin: 2rem 0px 2rem 2rem;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
 }
@@ -12207,11 +12212,64 @@ div.carousel-item div.fixed-h {
 
 .papeleria {
   margin-inline: 1.5rem;
+  max-width: 1300px;
+  margin-inline: auto;
+  margin-block: clamp(2rem, 15vw, 9rem);
+}
+@media screen and (min-width: 650px) {
+  .papeleria {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 650px) {
+  .papeleria-section:first-child {
+    width: 60%;
+  }
+  .papeleria-section:last-child {
+    width: 40%;
+    padding-left: 2rem;
+  }
 }
 .papeleria-section h2 {
   font-size: 2.3rem;
   text-align: center;
   padding-inline: 2rem;
+}
+.papeleria-section-flex {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 3rem auto 2rem auto;
+}
+@media screen and (min-width: 650px) {
+  .papeleria-section-flex {
+    width: 100%;
+  }
+}
+.papeleria-section-img {
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+.papeleria-section-img:first-child {
+  right: 60px;
+}
+.papeleria-section-img:last-child {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  z-index: -1;
+}
+@media screen and (min-width: 650px) {
+  .papeleria-section-img:last-child {
+    top: 89px;
+    right: -52px;
+  }
+}
+.papeleria-section-img img {
+  width: 100%;
 }
 
 html {
