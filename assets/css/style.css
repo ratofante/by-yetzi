@@ -11629,6 +11629,61 @@ div.separador:before {
   }
 }
 
+.vendidos-large {
+  display: none;
+}
+@media screen and (min-width: 650px) {
+  .vendidos-large {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #vendidos-carrusel {
+    display: none;
+  }
+}
+
+.vendidos {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 320px;
+  height: 498px;
+  margin-inline: auto;
+}
+.vendidos-img {
+  padding: 1rem;
+  margin-bottom: auto;
+}
+.vendidos-img img {
+  width: 85%;
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+.vendidos-text {
+  position: relative;
+  text-align: center;
+  height: inherit;
+}
+.vendidos-text-title {
+  font-size: 2rem;
+}
+.vendidos-text-text-adicionales {
+  font-weight: 900;
+}
+.vendidos-text button.button-1 {
+  margin: auto;
+  position: absolute;
+  bottom: 5px;
+  left: 25%;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
 }

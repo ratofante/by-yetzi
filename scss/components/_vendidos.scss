@@ -1,0 +1,51 @@
+.vendidos-large {
+  display: none;
+  @include large {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: $viewport-margin;
+  }
+}
+#vendidos-carrusel {
+  @include large {
+    display: none;
+  }
+}
+
+.vendidos {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 320px;
+  height: 498px;
+  margin-inline: auto;
+  &-img {
+    padding: 1rem;
+    margin-bottom: auto;
+    & img {
+      width: 85%;
+      margin: auto;
+      border: 5px solid black;
+      border-radius: 50%;
+    }
+  }
+  &-text {
+    position: relative;
+    text-align: center;
+    height: inherit;
+    &-title {
+      font-size: 2rem;
+    }
+    &-text-adicionales {
+      font-weight: 900;
+    }
+    & button.button-1 {
+      margin: auto;
+      position: absolute;
+      bottom: 5px;
+      left: 25%;
+    }
+  }
+}
