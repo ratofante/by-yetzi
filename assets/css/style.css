@@ -11227,7 +11227,7 @@ a {
 }
 
 .upper {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 html {
@@ -12203,6 +12203,15 @@ div.carousel-item div.fixed-h {
 .antes-despues {
   display: flex;
   flex-direction: row;
+}
+
+.papeleria {
+  margin-inline: 1.5rem;
+}
+.papeleria-section h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  padding-inline: 2rem;
 }
 
 html {

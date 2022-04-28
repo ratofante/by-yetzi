@@ -1,0 +1,11 @@
+.papeleria {
+  margin-inline: $viewport-margin;
+
+  &-section {
+    & h2 {
+      font-size: 2.3rem;
+      text-align: center;
+      padding-inline: 2rem;
+    }
+  }
+}
