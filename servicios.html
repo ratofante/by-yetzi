@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>by Yetzii - Servicios</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- H E A D E R -->
+    <header class="header">
+      <div class="header-logo">
+        <img src="./assets/img/logo-full.svg" alt="by-Yetzii logo" />
+      </div>
+      <div class="header-slogan">
+        <img
+          src="./assets/img/slogan.svg"
+          alt="Busques lo que busques, ¡Lo Tenemos! Tu solución, sin importar dónde estés."
+        />
+      </div>
+      <div class="header-navbar">
+        <div class="header-navbar-btn">
+          <button id="menuBtn" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+          </button>
+        </div>
+        <nav id="navBar" class="closed-menu">
+          <a href="./index.html" class="nav-links"> Quiénes Somos </a>
+          <a href="./servicios.html" class="nav-links"> Servicios </a>
+          <a href="#footer" class="nav-links"> Contacto </a>
+        </nav>
+      </div>
+    </header>
+    <!-- Banner -->
+    <div class="banner servicios-banner"></div>
+
+    <!-- M A I N -->
+
+    <main>
+      <section class="servicios">
+        <h2 class="servicios__main_title">
+          Conoce los servicios que ofrecemos para ti
+        </h2>
+
+        <!-- Carrousel servicios  -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="servicios-carrusel">
+                <div class="">
+                  <img src="./assets/img/logo-blue.svg" alt="" />
+                </div>
+                <h4>Marketing Digital</h4>
+                <button class="bg-blue">
+                  <a href="/servicios/marketing-digital.html"
+                    >Mas información</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="servicios-carrusel">
+                <div class="">
+                  <img src="./assets/img/logo-pink.svg" alt="" />
+                </div>
+                <h4>Papeleria para Eventos</h4>
+                <button class="bg-pink">
+                  <a href="/servicios/papeleria-eventos.html"
+                    >Mas información</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="servicios-carrusel">
+                <div class="">
+                  <img src="./assets/img/logo-yellow.svg" alt="" />
+                </div>
+                <h4>Identidad Corporativa</h4>
+                <button class="bg-yellow">
+                  <a href="/servicios/identidad-corportativa.html"
+                    >Mas información</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="servicios-carrusel">
+                <div class="">
+                  <img src="./assets/img/logo-black.svg" alt="" />
+                </div>
+                <h4>Diseño Gráfico e Impresión</h4>
+                <button class="bg-black text-white">
+                  <a href="./servicios/diseño-impresion.html"
+                    >Mas información</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Large Screen Servicios -->
+        <section class="display-servicios">
+          <div class="servicios-carrusel">
+            <div class="">
+              <img src="./assets/img/logo-blue.svg" alt="" />
+            </div>
+            <h4>Marketing Digital</h4>
+            <button class="bg-blue">
+              <a href="./servicios/marketing-digital.html">Mas Información</a>
+            </button>
+          </div>
+          <div class="servicios-carrusel">
+            <div class="">
+              <img src="./assets/img/logo-yellow.svg" alt="" />
+            </div>
+            <h4>Papelería para eventos</h4>
+            <button class="bg-yellow">
+              <a href="./servicios/papeleria-eventos.html">Mas información</a>
+            </button>
+          </div>
+          <div class="servicios-carrusel">
+            <div class="">
+              <img src="./assets/img/logo-pink.svg" alt="" />
+            </div>
+            <h4>Identidad Corportativa</h4>
+            <button class="bg-pink">
+              <a href="./servicios/identidad-corportativa.html"
+                >Mas información</a
+              >
+            </button>
+          </div>
+          <div class="servicios-carrusel">
+            <div class="">
+              <img src="./assets/img/logo-black.svg" alt="" />
+            </div>
+            <h4>Diseño Gráfico e Impresión</h4>
+            <button class="bg-black text-white">
+              <a href="./servicios/diseño-impresion.html">Mas información</a>
+            </button>
+          </div>
+        </section>
+
+        <!-- Titulos de bajada / Separadores -->
+        <h3 class="servicios__bajada">Somos más que una empresa de diseño</h3>
+        <h3 class="servicios__bajada">
+          Somos consultores y asesores en comunicación gráfica.
+        </h3>
+      </section>
+    </main>
+
+    <!-- F O O T E R -->
+
+    <footer id="footer">
+      <ul class="footer__">
+        <!-- revisar resol -->
+
+        <li>
+          <a href="https://www.facebook.com/byyetziigonzalez" target="_blank"
+            ><img
+              class="footer__img"
+              src="./assets/img/facebook.svg"
+              alt="facebook"
+          /></a>
+          _______
+        </li>
+        <li>
+          <a href="mailto:yetzigonzalez@gmail.com" target="_blank"
+            ><img class="footer__img" src="./assets/img/mail.svg" alt="google"
+          /></a>
+          _______
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x95bccd1bfd59ce3f:0x77dab2b0dbde5ebc?source=g.page.m.we"
+            target="_blank"
+            ><img
+              class="footer__img"
+              src="./assets/img/google.svg"
+              alt="google"
+          /></a>
+          _______
+        </li>
+        <li>
+          <a href="https://www.instagram.com/yetziigonzalez" target="_blank"
+            ><img
+              class="footer__img"
+              src="./assets//img/instagram.svg"
+              alt="instagram" /></a
+          >_______
+        </li>
+        <li>
+          <a href="https://wa.me/5491135706479" target="_blank"
+            ><img
+              class="footer__img"
+              src="./assets//img/whatsapp.svg"
+              alt="whatsapp" /></a
+          >_______
+        </li>
+      </ul>
+
+      <p class="footer__text">copyright 2020 - 2022 all rights reserved</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

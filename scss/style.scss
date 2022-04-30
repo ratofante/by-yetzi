@@ -9,12 +9,22 @@
 //Utility classes
 @import "./utilities/utility-classes";
 
+//Componentes
+@import "./components/banner";
+@import "./components/navbar-servicios";
+@import "./components/servicio-logo";
+@import "./components/separador";
+@import "./components/cotizacion-button";
+@import "./components/logofolio";
+@import "./components/vendidos";
+
 //Sections
 @import "./sections/header";
-@import "./sections/banner";
 @import "./sections/main";
 @import "./sections/footer";
+@import "./sections/servicios_main";
+@import "./sections/servicio";
+@import "./sections/marketing-paquetes";
+@import "./sections/papeleria";
 
 @import "./ui-kit/ui-kit";
-
-

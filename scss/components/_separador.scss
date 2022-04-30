@@ -1,0 +1,15 @@
+div.separador {
+  position: relative;
+  width: 96%;
+  height: 11px;
+  margin-bottom: 60px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    width: 38vw;
+    height: 11px;
+    left: 0px;
+    background-color: inherit;
+  }
+}

@@ -1,0 +1,42 @@
+.logofolio-large {
+  display: none;
+  @include large {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+#logofolio-carrusel {
+  max-width: 440px;
+  height: 480px;
+  margin: auto;
+  @include large {
+    display: none;
+  }
+}
+.logofolio {
+  max-width: 320px;
+  margin: auto;
+  @include large {
+    width: 30%;
+    margin-block: 2rem;
+  }
+  @include wide {
+    flex: 1 1 320px;
+  }
+  &-img {
+    padding: 1rem;
+    & img {
+      width: 100%;
+    }
+  }
+  &-text {
+    text-align: center;
+    &-title {
+      @include large {
+        font-size: 2rem;
+        height: 50px;
+      }
+    }
+  }
+}
