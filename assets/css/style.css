@@ -12174,6 +12174,10 @@ html {
     justify-items: center;
     align-items: center;
   }
+
+  .footer__text__derechos {
+    font-size: 10px;
+  }
 }
 section.servicios {
   margin-block: 2rem;
