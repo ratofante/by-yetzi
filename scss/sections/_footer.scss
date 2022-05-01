@@ -12,7 +12,7 @@
      padding-left: 50px;
     
   }
-  p {
+  .footer__text {
   color: $white;
   text-align: center;
   font-size: 10px;
@@ -30,7 +30,10 @@
    
     
   }
-
+  .footer__text__derechos {
+      color: $black ;
+      text-align: center;
+  }
   .footer__img:hover {
     box-shadow: 3px 3px 1px $pink;
   }
@@ -40,10 +43,7 @@
     text-align: center;
   }
 
-  .footer__text {
-    text-align: center;
-    
-  }
+ 
 
   @include small {
     .footer__{ 

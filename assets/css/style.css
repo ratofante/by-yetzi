@@ -12134,7 +12134,7 @@ html {
   padding-left: 50px;
 }
 
-p {
+.footer__text {
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 10px;
@@ -12151,16 +12151,17 @@ p {
   background-color: rgb(255, 255, 255);
 }
 
+.footer__text__derechos {
+  color: rgb(26, 23, 27);
+  text-align: center;
+}
+
 .footer__img:hover {
   box-shadow: 3px 3px 1px rgb(226, 0, 122);
 }
 
 .footer__link__text {
   margin-top: 10px;
-  text-align: center;
-}
-
-.footer__text {
   text-align: center;
 }
 
