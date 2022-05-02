@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12118,6 +12119,10 @@ aside.servicios div.servicio__text p strong {
   }
 }
 
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
 .footer__ {
   display: flex;
   color: rgb(255, 255, 255);
@@ -12129,17 +12134,26 @@ aside.servicios div.servicio__text p strong {
   padding-left: 50px;
 }
 
-a:hover {
-  color: rgb(26, 23, 27);
+.footer__text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 10px;
 }
 
 .footer__img {
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
   box-shadow: 3px 3px 1px rgb(26, 23, 27);
   align-items: center;
   margin-bottom: 10px;
   align-items: center;
   background-color: rgb(255, 255, 255);
+}
+
+.footer__text__derechos {
+  color: rgb(26, 23, 27);
+  text-align: center;
 }
 
 .footer__img:hover {
@@ -12151,10 +12165,20 @@ a:hover {
   text-align: center;
 }
 
-.footer__text {
-  text-align: center;
-}
+@media screen and (max-width: 400px) {
+  .footer__ {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: center;
+  }
 
+  .footer__text__derechos {
+    font-size: 10px;
+  }
+}
 section.servicios {
   margin-block: 2rem;
   margin-inline: 1.5rem;
