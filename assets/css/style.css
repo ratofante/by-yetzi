@@ -12165,6 +12165,17 @@ html {
   text-align: center;
 }
 
+.footer__texto {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer__texto__ {
+  font-size: large;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 @media screen and (max-width: 400px) {
   .footer__ {
     margin-bottom: 50px;
@@ -12176,6 +12187,7 @@ html {
   }
 
   .footer__text__derechos {
+    text-align: center;
     font-size: 10px;
   }
 }
