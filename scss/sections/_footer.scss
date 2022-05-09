@@ -1,72 +1,67 @@
-@import "../variables";
-
-
+footer {
+  margin-top: 50px;
+}
 .footer__ {
-    display: flex;
-    color: $white;
-    flex-direction: row;
-    list-style: none;
-     justify-content: space-around;
-     background-color: $black ;
-     padding: 30px;
-     padding-left: 50px;
-    
-  }
-  .footer__text {
+  display: flex;
+  color: $white;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  background-color: $black;
+  padding: 30px;
+  padding-left: 50px;
+}
+.footer__text {
   color: $white;
   text-align: center;
   font-size: 10px;
 }
 
-  .footer__img {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 1px $black;
-    align-items: center;
-    margin-bottom: 10px;
-    align-items: center;
-    background-color: $white;
-   
-    
-  }
-  .footer__text__derechos {
-      color: $black ;
-      text-align: center;
-  }
-  .footer__img:hover {
-    box-shadow: 3px 3px 1px $pink;
-  }
-  
-  .footer__link__text{
-    margin-top: 10px;
-    text-align: center;
-  }
+.footer__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px $black;
+  align-items: center;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: $white;
+}
+.footer__text__derechos {
+  color: $black;
+  text-align: center;
+}
+.footer__img:hover {
+  box-shadow: 3px 3px 1px $pink;
+}
 
-.footer__texto{
+.footer__link__text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer__texto {
   text-align: center;
   margin-bottom: 15px;
 }
 
-  .footer__texto__ {
-    font-size:large;
-    text-align: center;
-    margin-bottom: 50px;
-  }
- 
+.footer__texto__ {
+  font-size: large;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-  @include small {
-    .footer__{ 
-      margin-bottom: 50px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      grid-gap: 15px;
-      justify-items: center;
-      align-items: center;
-    }
-    .footer__text__derechos{
-      text-align: center;
-      font-size: 10px;
-    }
-    
+@include small {
+  .footer__ {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: center;
+  }
+  .footer__text__derechos {
+    text-align: center;
+    font-size: 10px;
+  }
 }
