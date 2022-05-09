@@ -43,6 +43,16 @@
     text-align: center;
   }
 
+.footer__texto{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+  .footer__texto__ {
+    font-size:large;
+    text-align: center;
+    margin-bottom: 50px;
+  }
  
 
   @include small {
@@ -55,7 +65,8 @@
       align-items: center;
     }
     .footer__text__derechos{
-      
+      text-align: center;
       font-size: 10px;
     }
+    
 }
