@@ -11205,7 +11205,8 @@ html {
   font-size: 10px;
 }
 
-body {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -12409,7 +12410,7 @@ section.servicios h3.servicios__bajada {
     justify-content: space-evenly;
   }
   .paquetes-section div.col-small {
-    width: 45%;
+    width: 53%;
     max-width: 850px;
     display: flex;
     flex-direction: column;
@@ -12423,7 +12424,7 @@ section.servicios h3.servicios__bajada {
     margin-inline: 1rem;
   }
   .paquetes-section div.col-big {
-    width: 55%;
+    width: 45%;
   }
   .paquetes-section div.col-big div.section-arriba {
     display: flex;
@@ -12447,6 +12448,9 @@ section.servicios h3.servicios__bajada {
     display: flex;
     flex-direction: row;
   }
+}
+.papeleria-section {
+  overflow-x: hidden;
 }
 @media screen and (min-width: 650px) {
   .papeleria-section:first-child {

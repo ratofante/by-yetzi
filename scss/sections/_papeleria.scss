@@ -8,6 +8,7 @@
     flex-direction: row;
   }
   &-section {
+    overflow-x: hidden;
     @include large {
       &:first-child {
         width: 60%;
