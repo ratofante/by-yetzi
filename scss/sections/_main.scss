@@ -41,6 +41,11 @@ $block-spacing: 2rem;
         line-height: 2rem;
         margin: auto;
       }
+      @include xl {
+        max-width: 1060px;
+        font-size: 2rem;
+        line-height: 3rem;
+      }
     }
     &__title {
       & h3 {

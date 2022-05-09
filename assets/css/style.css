@@ -11912,6 +11912,13 @@ html {
     margin: auto;
   }
 }
+@media screen and (min-width: 1260px) {
+  .main__block__text {
+    max-width: 1060px;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
 .main__block__title {
   padding: 2rem;
 }
