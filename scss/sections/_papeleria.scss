@@ -39,16 +39,16 @@
       @include large {
       }
       &:first-child {
-        right: 60px;
+        right: -78px;
       }
       &:last-child {
         position: absolute;
-        top: 10px;
-        right: -10px;
+        top: -32px;
+        right: 111px;
         z-index: -1;
         @include large {
           top: 89px;
-          right: -52px;
+          right: 111px;
         }
       }
       & img {

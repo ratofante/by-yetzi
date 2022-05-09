@@ -1,6 +1,8 @@
 $block-spacing: 2rem;
 
 .main {
+  display: flex;
+  flex-direction: column;
   margin-block: $viewport-margin;
   @include large {
     &__block:nth-child(1) {
@@ -14,17 +16,16 @@ $block-spacing: 2rem;
     display: grid;
     grid-template-columns: 400px 1fr 1fr 1fr;
     grid-template-areas:
-      "aside1 block1 block1 block1"
-      "block2 block2 aside2 aside2"
-      "empty empty block3 block3"
-      "block4 block4 aside4 aside4"
+      "aside2 block1 block1 block1"
+      "aside2 block2 block2 block2"
+      "aside1 aside1 aside1 aside1"
       "block5 block5 block5 block5";
   }
   &__block {
     margin-inline: $viewport-margin;
     margin-block: $block-spacing;
     &__text {
-      padding: clamp(1.25rem, 7vw, 5rem);
+      padding: clamp(1.25rem, 7vw, 2rem);
       text-align: center;
       line-height: 2.5rem;
       & strong {
@@ -34,14 +35,19 @@ $block-spacing: 2rem;
         padding-inline: 15rem;
       }
       @include wide {
-        padding: 3rem;
+        padding: 1rem 3rem;
         max-width: 760px;
-        font-size: 2rem;
-        line-height: 5rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
         margin: auto;
       }
     }
     &__title {
+      & h3 {
+        font-size: 2.8rem;
+        margin-top: 1rem;
+        text-align: center;
+      }
       @include large {
         padding-inline: min(10vw, 6rem);
         padding-block: 100px;
@@ -53,9 +59,6 @@ $block-spacing: 2rem;
         }
       }
       padding: 2rem;
-      & h3 {
-        text-align: center;
-      }
     }
     &__img {
       display: none;
@@ -97,56 +100,6 @@ $block-spacing: 2rem;
       }
     }
   }
-  /* BLOCK 1 */
-  @keyframes bubbleMove {
-    0% {
-      scale: 0.8;
-      transform: translateX(20%);
-      opacity: 0.2;
-    }
-    50% {
-      scale: 1;
-      opacity: 0.15;
-      transform: translateX(0%);
-    }
-    100% {
-      scale: 1;
-      opacity: 0.1;
-    }
-  }
-  @keyframes bubbleMove2 {
-    0% {
-      scale: 1;
-      opacity: 0.3;
-      transform: translate(-15%, 0%);
-    }
-    50% {
-      scale: 1.4;
-      opacity: 0.2;
-      transform: translate(30%, 40%);
-    }
-    100% {
-      scale: 1.4;
-      opacity: 0.1;
-      transform: translate(35%, 40%);
-    }
-  }
-  @keyframes bubbleMove3 {
-    0% {
-      scale: 0.8;
-      transform: translate(35%, -100%);
-      opacity: 0.3;
-    }
-    50% {
-      scale: 1;
-      transform: translate(15%, -15%);
-    }
-    100% {
-      scale: 1;
-      transform: translate(0%, -20%);
-      opacity: 0.1;
-    }
-  }
   .block-1,
   .block-2,
   .block-5 {
@@ -154,57 +107,39 @@ $block-spacing: 2rem;
   }
   .block-1 {
     grid-area: block1;
-  }
-  @include wide {
-    div.block-1:after {
-      content: url("../img/logo-blue.svg");
-      animation: bubbleMove 180s ease forwards;
-    }
-    div.block-2:after {
-      content: url("../img/logo-yellow.svg");
-    }
-    div.block-5:after {
-      content: url("../img/logo-pink.svg");
-      animation: bubbleMove3 180s linear forwards;
-    }
-    div.block-1:after,
-    div.block-5:after {
-      position: absolute;
-      z-index: -1;
-      width: 900px;
-      transition: all ease;
-    }
-    div.block-2:after {
-      position: absolute;
-      z-index: -2;
-      width: 700px;
-      transition: all ease;
-      animation: bubbleMove2 180s ease forwards;
-    }
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / -1;
   }
 
   .block-2 {
     grid-area: block2;
-  }
-  .block-3 {
-    grid-area: block3;
-  }
-  .block-4 {
-    grid-area: block4;
+    order: 4;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / -1;
   }
   .block-5 {
     grid-area: block5;
+    order: 5;
   }
   .aside-1 {
     grid-area: aside1;
+    order: 2;
   }
   .aside-2 {
     grid-area: aside2;
+    order: 3;
   }
 }
 
 aside.servicios {
   margin: max(4vh, 2rem) $viewport-margin;
+  & h3.servicios-title {
+    font-size: 2rem;
+    text-align: center;
+  }
   & div.servicio {
     position: relative;
     display: flex;
@@ -246,7 +181,9 @@ aside.servicios {
     }
   }
   @include large {
-    display: none;
+    & .servicios-carrusel {
+      width: 320px;
+    }
   }
   @include wide {
     display: block;
@@ -256,8 +193,9 @@ aside.servicios {
 .aside-2 {
   @include large {
     & .imagen-separador {
-      min-height: 520px;
+      min-height: 470px;
       overflow-y: hidden;
+      max-height: 540px;
     }
   }
 }

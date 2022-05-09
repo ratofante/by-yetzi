@@ -71,3 +71,21 @@ section.servicios {
     }
   }
 }
+.servicios-main {
+  @extend .display-servicios;
+  display: flex;
+  flex-flow: column;
+  @include large {
+    flex-flow: row wrap;
+  }
+  & h3 {
+    text-align: center;
+    text-align: center;
+    margin: 3rem auto 4rem auto;
+    width: 100%;
+  }
+  & .servicios-carrusel {
+    width: 75vw;
+    margin: auto;
+  }
+}
