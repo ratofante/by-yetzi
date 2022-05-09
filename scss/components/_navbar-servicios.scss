@@ -85,3 +85,9 @@
     }
   }
 }
+.alter-text {
+  color: black;
+  @include wide {
+    color: white;
+  }
+}

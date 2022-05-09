@@ -11499,6 +11499,15 @@ i {
   }
 }
 
+.alter-text {
+  color: black;
+}
+@media screen and (min-width: 898px) {
+  .alter-text {
+    color: white;
+  }
+}
+
 .servicio-logo {
   position: relative;
   display: flex;
