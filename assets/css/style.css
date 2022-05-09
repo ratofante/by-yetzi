@@ -12214,7 +12214,8 @@ section.servicios h3.servicios__bajada {
 
 /* Servicios @Large */
 .display-servicios, .servicios-main {
-  display: none;
+  display: flex;
+  flex-flow: column;
 }
 @media screen and (min-width: 650px) {
   .display-servicios, .servicios-main {
