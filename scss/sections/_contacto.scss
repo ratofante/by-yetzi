@@ -43,14 +43,20 @@ a:hover {
       justify-items: center;
       align-items: center;
     }
-    .contacto__text {
+    .contacto__text1 {
         color: $black;
         font-size: 70%;
         align-items: center;
-        margin-left: 20px;
+        margin-left: 40px;
+}
+.contacto__text {
+    color: $black;
+        font-size: 70%;
+        align-items: center;
+        margin-left: 55px;
 }
 .contacto__img {
-    margin-left: 10px;
+    margin-left: 45px;
 }
 
   }
