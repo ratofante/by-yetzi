@@ -35,14 +35,14 @@ a:hover {
     margin: 50px;
 } 
 @include small {
-    // .contacto {
-    //   margin-bottom: 50px;
-    //   display: grid;
-    //   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    //   grid-gap: 15px;
-    //   justify-items: center;
-    //   align-items: center;
-    // }
+    .contacto {
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+      justify-items: center;
+      align-items: center;
+    }
     .contacto__text {
         color: $black;
         font-size: 70%;

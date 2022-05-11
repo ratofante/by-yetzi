@@ -12537,6 +12537,15 @@ a:hover {
 }
 
 @media screen and (max-width: 400px) {
+  .contacto {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: center;
+  }
+
   .contacto__text {
     color: rgb(26, 23, 27);
     font-size: 70%;
