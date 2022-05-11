@@ -12517,6 +12517,17 @@ a:hover {
   color: rgb(26, 23, 27);
 }
 
+.contacto__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px rgb(26, 23, 27);
+  align-items: center;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
 .diseño_link:hover {
   color: rgb(255, 255, 255);
 }
@@ -12525,6 +12536,18 @@ a:hover {
   margin: 50px;
 }
 
+@media screen and (max-width: 400px) {
+  .contacto__text {
+    color: rgb(26, 23, 27);
+    font-size: 70%;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .contacto__img {
+    margin-left: 10px;
+  }
+}
 html {
   font-family: "Montserrat", sans-serif;
 }
