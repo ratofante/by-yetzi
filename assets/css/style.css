@@ -12513,6 +12513,11 @@ section.servicios h3.servicios__bajada {
   text-align: center;
 }
 
+.contacto__text1 {
+  color: rgb(26, 23, 27);
+  text-align: center;
+}
+
 a:hover {
   color: rgb(26, 23, 27);
 }
@@ -12550,18 +12555,26 @@ a:hover {
     color: rgb(26, 23, 27);
     font-size: 70%;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 10px;
   }
 
   .contacto__text {
     color: rgb(26, 23, 27);
     font-size: 70%;
     align-items: center;
-    margin-left: 55px;
+    margin-left: 5px;
   }
 
-  .contacto__img {
-    margin-left: 45px;
+  .contacto__img1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px rgb(26, 23, 27);
+    align-items: center;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
   }
 }
 html {

@@ -13,6 +13,12 @@
     
    
   }
+  .contacto__text1 {
+    color: $black;
+    text-align: center;
+    
+   
+  }
 a:hover {
     color: $black;
 }
@@ -47,16 +53,24 @@ a:hover {
         color: $black;
         font-size: 70%;
         align-items: center;
-        margin-left: 40px;
+        margin-left: 10px;
 }
 .contacto__text {
     color: $black;
         font-size: 70%;
         align-items: center;
-        margin-left: 55px;
+        margin-left: 5px;
 }
-.contacto__img {
-    margin-left: 45px;
+.contacto__img1 {
+  width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px $black;
+    align-items: center;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: $white;
+    margin-left: 10px;
 }
 
   }
