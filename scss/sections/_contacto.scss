@@ -1,0 +1,38 @@
+.contacto {
+    display: flex;
+    color: $white;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding: 30px;
+    padding-left: 50px;
+  }
+.contacto__text {
+    color: $black;
+    text-align: center;
+    
+   
+  }
+a:hover {
+    color: $black;
+}
+
+
+.diseño_link:hover{
+    color: $white;
+}
+
+.contacto2{
+    margin: 50px;
+} 
+@include small {
+    .contacto {
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-gap: 15px;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+  

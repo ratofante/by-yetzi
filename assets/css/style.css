@@ -12120,10 +12120,6 @@ footer {
   text-align: center;
 }
 
-.footer__img:hover {
-  box-shadow: 3px 3px 1px rgb(226, 0, 122);
-}
-
 .footer__link__text {
   margin-top: 10px;
   text-align: center;
@@ -12502,6 +12498,43 @@ section.servicios h3.servicios__bajada {
   width: 100%;
 }
 
+.contacto {
+  display: flex;
+  color: rgb(255, 255, 255);
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.contacto__text {
+  color: rgb(26, 23, 27);
+  text-align: center;
+}
+
+a:hover {
+  color: rgb(26, 23, 27);
+}
+
+.diseño_link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.contacto2 {
+  margin: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  .contacto {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: center;
+  }
+}
 html {
   font-family: "Montserrat", sans-serif;
 }
