@@ -12498,6 +12498,10 @@ section.servicios h3.servicios__bajada {
   width: 100%;
 }
 
+.papeleria_link:hover {
+  color: rgb(255, 255, 255);
+}
+
 .contacto {
   display: flex;
   color: rgb(255, 255, 255);
