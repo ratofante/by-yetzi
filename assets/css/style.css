@@ -12525,16 +12525,6 @@ a:hover {
   margin: 50px;
 }
 
-@media screen and (max-width: 400px) {
-  .contacto {
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 15px;
-    justify-items: center;
-    align-items: center;
-  }
-}
 html {
   font-family: "Montserrat", sans-serif;
 }
