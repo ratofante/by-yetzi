@@ -12136,7 +12136,7 @@ footer {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
   .footer__ {
     margin-bottom: 50px;
     display: grid;
@@ -12556,7 +12556,7 @@ a:hover {
   margin: 50px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
   .contacto {
     margin-bottom: 50px;
     display: grid;
