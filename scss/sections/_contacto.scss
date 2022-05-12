@@ -14,6 +14,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    & strong {
+      font-size: 2rem;
+    }
   }
 }
 .contacto__text {
