@@ -11388,7 +11388,7 @@ i {
 }
 
 .servicios-banner {
-  background-image: url("../../assets/img/servicios-banner-mobile.jpg");
+  background-image: url("../../assets/img/servicios.jpg");
 }
 @media screen and (min-width: 898px) {
   .servicios-banner {
@@ -12103,14 +12103,25 @@ footer {
 }
 
 .footer__ {
-  display: flex;
   color: rgb(255, 255, 255);
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-around;
-  background-color: rgb(26, 23, 27);
   padding: 30px;
-  padding-left: 50px;
+  background-color: rgb(26, 23, 27);
+  list-style: none;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 15px;
+  justify-items: center;
+}
+@media screen and (min-width: 500px) {
+  .footer__ {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.footer__ li {
+  width: 60px;
 }
 
 .footer__text {
@@ -12158,7 +12169,6 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 15px;
     justify-items: center;
-    align-items: center;
   }
 
   .footer__text__derechos {
@@ -12545,7 +12555,6 @@ section.servicios h3.servicios__bajada {
   justify-content: space-around;
   margin: auto;
   padding: 30px;
-  padding-left: 50px;
   max-width: 900px;
 }
 .contacto li a {

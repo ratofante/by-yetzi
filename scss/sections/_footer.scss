@@ -2,14 +2,25 @@ footer {
   margin-top: 50px;
 }
 .footer__ {
-  display: flex;
   color: $white;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-around;
-  background-color: $black;
   padding: 30px;
-  padding-left: 50px;
+  background-color: $black;
+  list-style: none;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 15px;
+  justify-items: center;
+  @include medium {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+  }
+  & li {
+    width: 60px;
+  }
 }
 .footer__text {
   color: $white;
@@ -55,7 +66,6 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 15px;
     justify-items: center;
-    align-items: center;
   }
   .footer__text__derechos {
     text-align: center;
