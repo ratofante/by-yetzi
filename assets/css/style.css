@@ -11368,10 +11368,19 @@ i {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner img {
+  max-width: 210px;
 }
 @media screen and (min-width: 650px) {
   .banner {
     height: 600px;
+  }
+  .banner img {
+    max-width: 325px;
   }
 }
 .home-banner {
@@ -11401,6 +11410,11 @@ i {
 
 .papeleria-banner {
   background-image: url("../../assets/img/papeleria-banner.jpg");
+}
+
+.contacto-banner {
+  background-image: url("../../assets/img/contacto-banner.jpg");
+  height: 760px;
 }
 
 .navbar-servicios {
@@ -12357,6 +12371,11 @@ section.servicios h3.servicios__bajada {
   height: fit-content;
   margin-inline: auto;
 }
+@media screen and (min-width: 650px) {
+  .carrusel-paquetes {
+    margin-right: auto;
+  }
+}
 .carrusel-paquetes h3 {
   text-align: center;
   font-size: 1.9rem;
@@ -12378,8 +12397,17 @@ section.servicios h3.servicios__bajada {
   text-align: left;
 }
 
+.p-individuales {
+  display: flex;
+  flex-direction: row;
+}
+
 .bloque-paquete {
   margin-inline: 1rem;
+}
+
+.fixed-h {
+  width: 200px;
 }
 
 .paquetes-incluyen {
@@ -12412,6 +12440,13 @@ section.servicios h3.servicios__bajada {
     flex-direction: column;
     justify-content: center;
   }
+}
+@media screen and (min-width: 898px) and (min-width: 1260px) {
+  .paquetes-section div.col-small {
+    padding-left: 8rem;
+  }
+}
+@media screen and (min-width: 898px) {
   .paquetes-section div.col-small div.rows {
     display: flex;
     flex-direction: row;
@@ -12419,6 +12454,8 @@ section.servicios h3.servicios__bajada {
   .paquetes-section div.col-small div.rows div.carrusel-paquetes {
     margin-inline: 1rem;
   }
+}
+@media screen and (min-width: 898px) {
   .paquetes-section div.col-big {
     width: 45%;
   }
@@ -12505,8 +12542,15 @@ section.servicios h3.servicios__bajada {
   flex-direction: row;
   list-style: none;
   justify-content: space-around;
+  margin: auto;
   padding: 30px;
   padding-left: 50px;
+  max-width: 900px;
+}
+.contacto li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacto__text {
@@ -12523,22 +12567,10 @@ a:hover {
   color: rgb(26, 23, 27);
 }
 
-.contacto__img1 {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 1px rgb(26, 23, 27);
-  align-items: center;
-  margin-bottom: 10px;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-}
-
 .contacto__img {
   width: 60px;
   height: 60px;
   border-radius: 10px;
-  box-shadow: 3px 3px 1px rgb(26, 23, 27);
   align-items: center;
   margin-bottom: 10px;
   align-items: center;

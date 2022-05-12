@@ -1,38 +1,68 @@
 .contacto {
+  display: flex;
+  color: $white;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  margin: auto;
+  padding: 30px;
+  padding-left: 50px;
+  max-width: 900px;
+  & li a {
     display: flex;
-    color: $white;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-    padding: 30px;
-    padding-left: 50px;
+    flex-direction: column;
+    align-items: center;
   }
-.contacto__text {
-    color: $black;
-    text-align: center;
-    
-   
-  }
-  .contacto__text1 {
-    color: $black;
-    text-align: center;
-    
-   
-  }
-a:hover {
-    color: $black;
 }
-.contacto__img1 {
+.contacto__text {
+  color: $black;
+  text-align: center;
+}
+.contacto__text1 {
+  color: $black;
+  text-align: center;
+}
+a:hover {
+  color: $black;
+}
+.contacto__img {
   width: 60px;
   height: 60px;
   border-radius: 10px;
-  box-shadow: 3px 3px 1px $black;
   align-items: center;
   margin-bottom: 10px;
   align-items: center;
   background-color: $white;
 }
-.contacto__img {
+.diseño_link:hover {
+  color: $white;
+}
+
+.contacto2 {
+  margin: 50px;
+}
+@include small {
+  .contacto {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    justify-items: center;
+    align-items: center;
+  }
+  .contacto__text1 {
+    color: $black;
+    font-size: 70%;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .contacto__text {
+    color: $black;
+    font-size: 70%;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .contacto__img1 {
     width: 60px;
     height: 60px;
     border-radius: 10px;
@@ -41,46 +71,6 @@ a:hover {
     margin-bottom: 10px;
     align-items: center;
     background-color: $white;
-  }
-.diseño_link:hover{
-    color: $white;
-}
-
-.contacto2{
-    margin: 50px;
-} 
-@include small {
-    .contacto {
-      margin-bottom: 50px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 15px;
-      justify-items: center;
-      align-items: center;
-    }
-    .contacto__text1 {
-        color: $black;
-        font-size: 70%;
-        align-items: center;
-        margin-left: 10px;
-}
-.contacto__text {
-    color: $black;
-        font-size: 70%;
-        align-items: center;
-        margin-left: 5px;
-}
-.contacto__img1 {
-  width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 1px $black;
-    align-items: center;
-    margin-bottom: 10px;
-    align-items: center;
-    background-color: $white;
     margin-left: 10px;
-}
-
   }
-  
+}

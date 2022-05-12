@@ -18,6 +18,9 @@
   min-width: 200px;
   height: fit-content;
   margin-inline: auto;
+  @include large {
+    margin-right: auto;
+  }
   & h3 {
     text-align: center;
     font-size: 1.9rem;
@@ -39,12 +42,16 @@
     }
   }
 }
+.p-individuales {
+  display: flex;
+  flex-direction: row;
+}
 .bloque-paquete {
   margin-inline: 1rem;
 }
-// div.carousel-item div.fixed-h {
-//   height: 110px;
-// }
+.fixed-h {
+  width: 200px;
+}
 
 .paquetes-incluyen {
   margin-inline: $viewport-margin;
@@ -71,6 +78,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include xl {
+        padding-left: 8rem;
+      }
       & div.rows {
         display: flex;
         flex-direction: row;
