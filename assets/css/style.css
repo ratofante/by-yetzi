@@ -11413,9 +11413,8 @@ i {
 }
 
 .contacto-banner {
-  background-image: url("../../assets/img/contacto-banner.jpg");
-  height: 760px;
-  background-position-y: -10vw;
+  background-image: url("../../assets/img/contactos.jpg");
+  background-position-y: center;
 }
 
 .navbar-servicios {
@@ -12554,7 +12553,7 @@ section.servicios h3.servicios__bajada {
   list-style: none;
   justify-content: space-around;
   margin: auto;
-  padding: 30px;
+  padding: 30px 0px;
   max-width: 900px;
 }
 .contacto li a {
@@ -12578,13 +12577,19 @@ a:hover {
 }
 
 .contacto__img {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 10px;
   align-items: center;
   margin-bottom: 10px;
   align-items: center;
   background-color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 650px) {
+  .contacto__img {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .diseño_link:hover {
@@ -12595,7 +12600,7 @@ a:hover {
   margin: 50px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
   .contacto {
     margin-bottom: 50px;
     display: grid;
