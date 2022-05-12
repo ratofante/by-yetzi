@@ -20,12 +20,14 @@
     width: 190%;
     top: 262px;
     margin: auto;
-    opacity: 0.2;
+    opacity: 0;
     z-index: -1;
+    
     @include medium {
       top: 76px;
       width: 66%;
     }
+
     @include wide {
       position: static;
       opacity: 1;
