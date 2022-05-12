@@ -12431,6 +12431,7 @@ section.servicios h3.servicios__bajada {
 .antes-despues {
   display: flex;
   flex-direction: row;
+  max-width: 595px;
 }
 
 .papeleria {
@@ -12477,10 +12478,6 @@ section.servicios h3.servicios__bajada {
 .papeleria-section-img {
   width: 95%;
   margin: auto;
-  position: relative;
-}
-.papeleria-section-img:first-child {
-  right: -78px;
 }
 .papeleria-section-img:last-child {
   position: absolute;
