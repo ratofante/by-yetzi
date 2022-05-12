@@ -11415,6 +11415,7 @@ i {
 .contacto-banner {
   background-image: url("../../assets/img/contacto-banner.jpg");
   height: 760px;
+  background-position-y: -10vw;
 }
 
 .navbar-servicios {
