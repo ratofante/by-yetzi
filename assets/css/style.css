@@ -11802,10 +11802,10 @@ html {
   }
 }
 .header-navbar-btn button[aria-expanded=false] {
-  background-image: url("../img/menu-icon.svg");
+  background-image: url("../assets/img/menu-icon.svg");
 }
 .header-navbar-btn button[aria-expanded=true] {
-  background-image: url("../img/menu-close.svg");
+  background-image: url("../assets/img/menu-close.svg");
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
 }
