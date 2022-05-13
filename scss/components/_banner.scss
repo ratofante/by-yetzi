@@ -20,28 +20,28 @@
 }
 
 .home-banner {
-  background-image: url("../../assets/img/banner-inicio.jpeg");
+  background-image: url("../assets/img/banner-inicio.jpeg");
 }
 .servicios-banner {
-  background-image: url("../../assets/img/servicios.jpg");
+  background-image: url("../assets/img/servicios.jpg");
   @include wide {
-    background-image: url("../../assets/img/servicios.jpg");
+    background-image: url("../assets/img/servicios.jpg");
   }
 }
 .marketing-banner {
-  background-image: url("../../assets/img/marketing-banner.jpg");
+  background-image: url("../assets/img/marketing-banner.jpg");
 }
 .identidad-banner {
-  background-image: url("../../assets/img/identidad-banner.jpg");
+  background-image: url("../assets/img/identidad-banner.jpg");
 }
 .impresion-banner {
-  background-image: url("../../assets/img/impresion-banner.jpg");
+  background-image: url("../assets/img/impresion-banner.jpg");
 }
 .papeleria-banner {
-  background-image: url("../../assets/img/papeleria-banner.jpg");
+  background-image: url("../assets/img/papeleria-banner.jpg");
 }
 .contacto-banner {
-  background-image: url("../../assets/img/contactos.jpg");
+  background-image: url("../assets/img/contactos.jpg");
   background-position-y: center;
   background-position-x: right;
 }
