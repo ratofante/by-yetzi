@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11847,13 +11846,13 @@ html {
     color: rgb(26, 23, 27);
   }
 }
-.header-navbar nav a:nth-child(1):hover {
+.header-navbar nav a:nth-child(2):hover {
   color: rgb(0, 158, 224);
 }
-.header-navbar nav a:nth-child(2):hover {
+.header-navbar nav a:nth-child(3):hover {
   color: rgb(226, 0, 122);
 }
-.header-navbar nav a:nth-child(3):hover {
+.header-navbar nav a:nth-child(4):hover {
   color: rgb(255, 234, 0);
 }
 @media screen and (min-width: 650px) {
@@ -12640,68 +12639,6 @@ a:hover {
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
   }
-}
-html {
-  font-family: "Montserrat", sans-serif;
-}
-
-.ui-kit-body {
-  background-color: rgb(255, 255, 255);
-}
-.ui-kit-body .ui-div {
-  padding: 3rem;
-}
-.ui-kit-body h2 {
-  padding: 3rem 0px 0px 3rem;
-}
-
-.sist-color {
-  display: flex;
-  flex-flow: row;
-}
-@media screen and (max-width: 620px) {
-  .sist-color {
-    flex-direction: column;
-  }
-}
-.sist-color__section {
-  display: flex;
-  flex-flow: row;
-  width: 50%;
-  margin-bottom: 2rem;
-}
-.sist-color__section:first-child div div:nth-child(2) {
-  border: 1px solid black;
-}
-.sist-color__section__color {
-  margin-right: 2rem;
-}
-.sist-color__section__color:last-child {
-  margin-right: 0px;
-}
-.sist-color__section__color h3 {
-  text-align: left;
-}
-.sist-color__section__color__block {
-  width: 50px;
-  height: 50px;
-}
-.sist-color__section__color__text {
-  margin-top: 1rem;
-}
-
-.buttons-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-@media screen and (max-width: 620px) {
-  .buttons-div {
-    flex-direction: column;
-  }
-}
-.buttons-div button {
-  margin-block: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

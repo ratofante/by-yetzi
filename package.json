@@ -4,7 +4,8 @@
   "description": "Projecto para ByYetzibel",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch scss:assets/css"
+    "compile:sass": "sass --watch scss:assets/css",
+    "postcss:watch": "postcss assets/css/style.css --dir dist --watch"
   },
   "keywords": [
     "Diseño",
@@ -14,12 +15,14 @@
   "author": "Rodrigo González Wilkens -- Dabrowski Yanina ",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.7",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
     "sass": "^1.51.0"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.4",
     "bootstrap": "^5.1.3"
   }
 }
